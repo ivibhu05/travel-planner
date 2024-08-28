@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for the travel planner app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivibhu05/travel-planner.git"
+  },
+  "author": "Vibhanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivibhu05/travel-planner/issues"
+  },
+  "homepage": "https://github.com/ivibhu05/travel-planner#readme"
+}
