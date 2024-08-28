@@ -1,19 +1,29 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend for the travel planner app",
+  "description": "backend for travel app",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js",
+    "test": "npm run tests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ivibhu05/travel-planner.git"
   },
-  "author": "Vibhanshu",
+  "author": "Vibhanshu Pandey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ivibhu05/travel-planner/issues"
   },
-  "homepage": "https://github.com/ivibhu05/travel-planner#readme"
+  "homepage": "https://github.com/ivibhu05/travel-planner#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1"
+  }
 }
