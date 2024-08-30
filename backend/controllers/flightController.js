@@ -2,7 +2,7 @@ const dayjs = require("dayjs");
 const axios = require("axios");
 const catchAsync = require("./../utils/catchAsync");
 
-exports.getAllFlights = async (req, res) => {
+exports.getAllFlights = catchAsync(async (req, res) => {
   const date = dayjs(req.body.date).format("YYYYMMDD");
 
   const flights = await axios.get(
@@ -10,6 +10,6 @@ exports.getAllFlights = async (req, res) => {
   );
   return res.status(200).json({
     status: "success",
-    data: response.data,
+    data: flights.data,
   });
-};
+});
