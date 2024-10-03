@@ -1,12 +1,19 @@
 import React from 'react'
+import '../static/home.css'
+import InputForm from './form'
 
 function Home() {
   return (
-    <div>
-
-        <h2>
-         Travel Planner App!
-            </h2>
+    <div className='container'>
+      <div className='d-flex flex-column justify-content-center align-items-center'>
+        <div className='home-title'>
+          <span className='title'>Traveling Somewhere?</span><br/>
+          <span className='sub-title'>Let's Plan things</span>
+        </div>
+        <div className='main-content'>
+          <InputForm />
+        </div>
+      </div>
     </div>
   )
 }
